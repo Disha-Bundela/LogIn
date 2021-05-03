@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageButton
+        android:id="@+id/img_website"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/website1"
+        android:onClick="openWebsite"
+        android:scaleType="centerCrop"
+        android:tooltipText="Open Website"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img_phone"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/phone"
+        android:onClick="dialPhone"
+        android:scaleType="centerCrop"
+        android:tooltipText="Call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_email" />
+
+    <ImageButton
+        android:id="@+id/img_location"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/location2"
+        android:onClick="getLocation"
+        android:scaleType="centerCrop"
+        android:tooltipText="Get Location Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_website" />
+
+    <ImageButton
+        android:id="@+id/img_email"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/email3"
+        android:onClick="sendEmail"
+        android:scaleType="centerCrop"
+        android:tooltipText="Send Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_location" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/option1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+    <TextView
+        android:id="@+id/label_option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="85dp"
+        android:text="@string/option2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_option1" />
+
+    <TextView
+        android:id="@+id/label_option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/option3"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_option2" />
+
+    <TextView
+        android:id="@+id/label_option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/option4"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_option3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
